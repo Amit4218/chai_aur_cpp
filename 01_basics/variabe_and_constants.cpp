@@ -12,7 +12,7 @@ int main(){
 
     // will give an error
 
-    // const userId = 321; 
+    // user_id = 321; 
 
     // A variable is a named storage location in memory that holds a value of a specific data type (e.g., int, string, bool)
     
@@ -26,8 +26,5 @@ int main(){
     cout << user_phone_number << endl;
     cout << username << endl;
     cout << is_active << endl;
-
-
-
 
 }
