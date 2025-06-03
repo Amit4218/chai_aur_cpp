@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import sys
 import os
 
@@ -56,9 +58,8 @@ def main():
             if folder_check:
                 file_create(no_of_files, file_location, file_extention, file_name)
 
-
-
-        file_create(no_of_files, file_location, file_extention, file_name)
+        else:
+            file_create(no_of_files, file_location, file_extention, file_name)
 
     except Exception as e :
         print("Error", e)
