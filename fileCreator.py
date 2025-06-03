@@ -30,7 +30,7 @@ def folder_check(folder_name: str):
             return True
         
         else:
-            os.makedirs(folder_name, exist=True)
+            os.makedirs(folder_name, exist_ok=True)
             return True
 
     except Exception as e:
