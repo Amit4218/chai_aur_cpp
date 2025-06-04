@@ -23,6 +23,9 @@ def file_create(files: int, file_location: str, file_extention: str, file_name: 
 def folder_check(folder_name: str):
     
     try:
+
+        if folder_name == "-": 
+            return True 
          
         is_folder_exist = os.path.exists(folder_name)
 
@@ -36,7 +39,7 @@ def folder_check(folder_name: str):
             return True
 
     except Exception as e:
-        print("File Exist Error: ", e)
+        print("Folder check Error: ", e)
 
 
 def main():
